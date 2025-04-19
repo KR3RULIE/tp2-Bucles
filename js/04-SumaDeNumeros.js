@@ -5,7 +5,7 @@ con “cancelar” deberá indicarse la suma total de los números introducidos.
 let suma = 0;
 let num = prompt("Ingrese un numero:");
 while (num !== null) {
-  if (!isNaN(num) && num.trim() !== "") {
+  if (!isNaN(num) && num !== "") {
     suma += parseInt(num);
   } else {
     alert("Eso no es un número válido, intenta de nuevo.");
